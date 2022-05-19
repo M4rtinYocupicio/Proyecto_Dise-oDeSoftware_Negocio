@@ -21,7 +21,7 @@ public class PublicacionBO implements IPublicacionBO
     @Override
     public boolean agregar(Publicacion publicacion) 
     {
-        return persistencia.agregar(publicacion);
+        return persistencia.agregarPublicacion(publicacion);
     }
     
 }

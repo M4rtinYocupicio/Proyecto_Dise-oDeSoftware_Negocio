@@ -21,7 +21,7 @@ public class RevistaBO implements IRevistaBO
     @Override
     public boolean agregar(Revista revista) 
     {
-        return persistencia.agregar(revista);
+        return persistencia.agregarRevista(revista);
     }
     
 }

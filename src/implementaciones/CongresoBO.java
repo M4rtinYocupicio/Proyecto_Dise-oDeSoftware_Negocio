@@ -21,7 +21,7 @@ public class CongresoBO implements ICongresoBO
     @Override
     public boolean agregar(Congreso congreso) 
     {
-        return persistencia.agregar(congreso);
+        return persistencia.agregarCongreso(congreso);
     }
     
 }
