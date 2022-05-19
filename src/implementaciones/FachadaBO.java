@@ -5,10 +5,12 @@
  */
 package implementaciones;
 
+import Entities.Congreso;
 import Entities.Profesor;
 import Entities.Proyecto;
 import Entities.Publicacion;
 import Entities.Revista;
+import interfaces.ICongresoBO;
 import interfaces.IFachadaBO;
 import interfaces.IProfesorBO;
 import interfaces.IProyectoBO;
@@ -27,6 +29,7 @@ public class FachadaBO implements IFachadaBO
     private IProfesorBO profesorBO;
     private IPublicacionBO publicacionBO;
     private IRevistaBO revistaBO;
+    private ICongresoBO congresoBO;
 
     public FachadaBO() 
     {
@@ -79,6 +82,12 @@ public class FachadaBO implements IFachadaBO
     public boolean agregarRevistas(Revista revista) 
     {
         return revistaBO.agregar(revista);
+    }
+
+    @Override
+    public boolean agregarCongreso(Congreso congreso) 
+    {
+        return congresoBO.agregar(congreso);
     }
     
 }

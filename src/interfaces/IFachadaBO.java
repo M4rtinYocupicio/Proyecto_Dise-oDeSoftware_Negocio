@@ -5,6 +5,7 @@
  */
 package interfaces;
 
+import Entities.Congreso;
 import Entities.Profesor;
 import Entities.Proyecto;
 import Entities.Publicacion;
@@ -29,4 +30,6 @@ public interface IFachadaBO
     boolean agregarPublicaciones(Publicacion publicacion);
     
     boolean agregarRevistas(Revista revista);
+    
+    boolean agregarCongreso(Congreso congreso);
 }

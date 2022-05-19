@@ -5,6 +5,7 @@
  */
 package implementaciones;
 
+import interfaces.ICongresoBO;
 import interfaces.IProfesorBO;
 import interfaces.IProyectoBO;
 import interfaces.IPublicacionBO;
@@ -34,5 +35,10 @@ public class BOFactory
     public static IRevistaBO crearRevistaBO()
     {
         return new RevistaBO();
+    }
+    
+    public static ICongresoBO crearCongresoBO()
+    {
+        return new CongresoBO();
     }
 }
