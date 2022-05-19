@@ -21,7 +21,8 @@ public class ProfesorBO implements IProfesorBO {
     IPersistencia persistencia = new Persistencia();
 
     @Override
-    public boolean agregar(Profesor profesor) {
+    public boolean agregar(Profesor profesor) 
+    {
         return persistencia.agregarProfesores(profesor);
     }
 
