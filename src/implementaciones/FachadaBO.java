@@ -8,10 +8,12 @@ package implementaciones;
 import Entities.Profesor;
 import Entities.Proyecto;
 import Entities.Publicacion;
+import Entities.Revista;
 import interfaces.IFachadaBO;
 import interfaces.IProfesorBO;
 import interfaces.IProyectoBO;
 import interfaces.IPublicacionBO;
+import interfaces.IRevistaBO;
 import java.util.List;
 import org.bson.types.ObjectId;
 
@@ -24,6 +26,7 @@ public class FachadaBO implements IFachadaBO
     private IProyectoBO proyectoBO;
     private IProfesorBO profesorBO;
     private IPublicacionBO publicacionBO;
+    private IRevistaBO revistaBO;
 
     public FachadaBO() 
     {
@@ -70,6 +73,12 @@ public class FachadaBO implements IFachadaBO
     public boolean agregarPublicaciones(Publicacion publicacion) 
     {
         return publicacionBO.agregar(publicacion);
+    }
+
+    @Override
+    public boolean agregarRevistas(Revista revista) 
+    {
+        return revistaBO.agregar(revista);
     }
     
 }
