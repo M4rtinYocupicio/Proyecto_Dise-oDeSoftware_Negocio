@@ -7,6 +7,7 @@ package interfaces;
 
 import Entities.Profesor;
 import Entities.Proyecto;
+import Entities.Publicacion;
 import java.util.List;
 import org.bson.types.ObjectId;
 
@@ -23,4 +24,6 @@ public interface IFachadaBO
     boolean agregarProfesores(Profesor profesor);
     List<Profesor> consultarTodosProfesores();
     Profesor consultarProfesores(ObjectId idProfesor);
+    
+    boolean agregarPublicaciones(Publicacion publicacion);
 }
