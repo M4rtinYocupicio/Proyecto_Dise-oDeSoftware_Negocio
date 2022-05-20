@@ -5,14 +5,17 @@
  */
 package interfaces;
 
-import interfaces.*;
-import Entities.Congreso;
-
 /**
  *
  * @author marti
  */
-public interface ICongresoBO 
-{
-    boolean agregar(Congreso congreso);
+public class NewMain {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+    }
+    
 }

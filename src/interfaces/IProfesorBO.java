@@ -5,6 +5,7 @@
  */
 package interfaces;
 
+import interfaces.*;
 import Entities.Profesor;
 import java.util.List;
 import org.bson.types.ObjectId;
