@@ -5,7 +5,6 @@
  */
 package interfaces;
 
-import interfaces.*;
 import Entities.Congreso;
 import Entities.Profesor;
 import Entities.Proyecto;

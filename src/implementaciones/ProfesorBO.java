@@ -16,8 +16,8 @@ import org.bson.types.ObjectId;
  *
  * @author marti
  */
-public class ProfesorBO implements IProfesorBO {
-
+public class ProfesorBO implements IProfesorBO 
+{
     IPersistencia persistencia = new Persistencia();
 
     @Override
@@ -27,7 +27,8 @@ public class ProfesorBO implements IProfesorBO {
     }
 
     @Override
-    public List<Profesor> consultarTodos() {
+    public List<Profesor> consultarTodos() 
+    {
         return persistencia.consultarTodosProfesores();
     }
 
