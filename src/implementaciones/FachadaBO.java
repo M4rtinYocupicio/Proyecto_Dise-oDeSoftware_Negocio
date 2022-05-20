@@ -34,6 +34,10 @@ public class FachadaBO implements IFachadaBO
     public FachadaBO() 
     {
         this.proyectoBO = BOFactory.crearProyectoBO();
+        this.profesorBO = BOFactory.crearProfesorBO();
+        this.publicacionBO = BOFactory.crearPublicacionBO();
+        this.revistaBO = BOFactory.crearRevistaBO();
+        this.congresoBO = BOFactory.crearCongresoBO();
     }
 
     @Override
@@ -75,6 +79,7 @@ public class FachadaBO implements IFachadaBO
     @Override
     public boolean agregarPublicaciones(Publicacion publicacion) 
     {
+        
         return publicacionBO.agregar(publicacion);
     }
 
